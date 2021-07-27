@@ -1,0 +1,9 @@
+// Test 5: Strings
+
+"Quiero aprobar compiladores"
+
+"con un 10" "Me llamo Mauro"
+
+
+"Un strng""otro string"
+

@@ -1,0 +1,16 @@
+// Test 3: Comentarios
+// Para probar comentarios simples y multilinea. Deberia dar EOF en linea 16
+
+// comentario simple
+
+/* comentario 
+	multilinea
+		 */
+
+
+/* *//* */// se supone que aca hay 3 comentarios. Igual no deberia informar nada
+
+/* // otro comentario
+multilinea con caracteres # @ $ ! & ^ */
+
+// Comentario que termina con EOF (aceptado)

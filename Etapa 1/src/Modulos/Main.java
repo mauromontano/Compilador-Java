@@ -1,0 +1,63 @@
+package Modulos;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import Estructuras.Token;
+import Excepciones.ExcepcionLexica;
+
+public class Main {
+
+	public static void main(String[] args) throws IOException{
+		Token token = null;
+		BufferedWriter bw = null;
+		try {				
+			if (args.length == 0 || args.length > 2) {
+				System.out.println("Cantidad inválida de argumentos");
+				System.out.println("Modo de uso: java Etapa1 <Entrada> [Salida]");
+			} else {
+				BufferedReader br = new BufferedReader(new FileReader(args[0]));
+				AnalizadorLexico alex = new AnalizadorLexico(br);
+				if (args.length == 1) {
+					// Salida por pantalla con formato de 32 caracteres para el TIPO y LEXEMA y 8 caracteres para LINEA
+					System.out.format("%-32s%-32s%-8s %n", "TIPO", "LEXEMA", "LINEA");
+					do {
+						token = alex.getToken();
+						System.out.format("%-32s%-32s%-8d %n", token.getNombre(),token.getLexema(),token.getLinea());
+					} while (token.getNombre()!="EOF");
+				} else {
+					// Salida por archivo
+					File file = new File(args[1]);
+					if (!file.exists()) {
+						 file.createNewFile();
+					}
+					FileWriter fw = new FileWriter(file);
+					bw = new BufferedWriter(fw);
+					//Salida por archivo con formato de 32 caracteres para el TIPO y LEXEMA y 8 caracteres para LINEA 
+					bw.write(String.format("%-32s%-32s%-8s %n", "TIPO", "LEXEMA", "LINEA"));
+					do {
+						token = alex.getToken();
+						bw.write(String.format("%-32s%-32s%-8d %n", token.getNombre(),token.getLexema(),token.getLinea()));
+					} while (token.getNombre()!="EOF");
+					bw.close();
+				}
+				System.out.println("Análisis léxico operó de forma exitosa");
+			}
+		} catch (IOException e1) {
+			System.out.println("Error de archivos. Revisar que los datos de entrada/salida esten correctos."); 
+		} catch (ExcepcionLexica e2) {
+			System.out.println("No se pudo completar el análisis léxico");
+		} catch (Exception e3) {
+			System.out.println("Se produjo un error");
+		} finally {
+			if (bw!=null) 
+				bw.close();
+		}
+	}
+
+}
+

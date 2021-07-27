@@ -1,0 +1,3 @@
+" string con mas de una linea no se contempla en minijava
+
+"

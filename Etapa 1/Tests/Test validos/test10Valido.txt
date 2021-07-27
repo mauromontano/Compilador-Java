@@ -1,0 +1,18 @@
+public class PruebaClase {
+	
+	private static int n ;
+	private String cadena ;
+
+	// Comentario de prueba
+
+	public PruebaClase() {
+		n = 2020 ;
+		cadena = "Etapa 1 de compiladores" ;
+		n = (int) cadena + n + 99 ;			
+	}
+
+	private String concatenar ( String cadena ) {
+		return cadena+="a";
+	}
+
+}

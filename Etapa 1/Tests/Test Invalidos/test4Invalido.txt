@@ -1,0 +1,7 @@
+public class hola{
+	boolean soymauro =true;
+	boolean promociono =true;
+	if (soymauro & promociono){
+		println ("si!!");	
+	}
+}

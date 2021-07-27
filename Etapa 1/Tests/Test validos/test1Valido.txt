@@ -1,0 +1,29 @@
+//Test 1: Palabras reservadas
+// Una por linea, y después todas en la misma linea. Deberia de dar EOF en la linea 29
+
+class
+extends
+static
+dynamic
+void
+boolean
+char
+int
+String
+public
+protected
+private
+final
+if
+else
+while
+return
+this
+new
+null
+true
+false
+
+
+
+class nu14ooo extends static dynamic public protected private void boolean char int String if else while return this new null true false

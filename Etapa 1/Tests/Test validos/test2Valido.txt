@@ -1,0 +1,19 @@
+// Test2: Identificadores
+// Para probar identificadores válidos y terminar en EOF
+
+nombre_mauro
+nombre
+id
+
+
+
+ClaseX
+X
+
+
+cant5
+id_
+
+fecha
+aux temp
+a b
