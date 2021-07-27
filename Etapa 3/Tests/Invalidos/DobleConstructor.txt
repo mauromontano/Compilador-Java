@@ -1,0 +1,27 @@
+class A{
+
+	
+	A(int y){}
+	
+
+	A(char t){}
+	
+	
+	A(int x, int y, int hia){}
+	
+	A(){}
+
+	
+	
+
+}
+
+
+class B extends A{
+	
+	static void h2(A a, A a2){
+	}
+
+	static void main() {
+	}
+}

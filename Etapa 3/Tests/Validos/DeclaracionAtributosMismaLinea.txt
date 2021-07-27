@@ -1,0 +1,11 @@
+class A{
+	
+	public int a,b,c,d,e;
+	private String f,g;
+	public A h; 
+	
+	static int main(){
+	}
+	
+}
+

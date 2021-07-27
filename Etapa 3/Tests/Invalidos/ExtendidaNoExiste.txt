@@ -1,0 +1,11 @@
+class A{
+
+	A(){
+	}
+
+}
+
+class Otra extends B{
+	static void main(){
+	}
+}

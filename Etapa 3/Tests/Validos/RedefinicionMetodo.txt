@@ -1,0 +1,20 @@
+class B{
+	dynamic int v( int x, char b, String c, int e, char f){
+	}
+}
+
+class A extends C{
+	static int main(){
+	}
+
+	dynamic int v( int x, char a, String b, int d, char e){
+	}
+}
+
+
+class C extends D{
+}
+
+
+class D extends B{
+}

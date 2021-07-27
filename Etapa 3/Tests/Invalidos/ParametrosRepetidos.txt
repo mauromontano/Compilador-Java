@@ -1,0 +1,11 @@
+class A{
+	A(int x, int x){
+	}
+
+}
+
+class B{
+
+	static void main(){}
+
+}

@@ -1,0 +1,8 @@
+// falta definir la clase Main
+
+class A{
+
+static int metodo(){
+}
+
+}

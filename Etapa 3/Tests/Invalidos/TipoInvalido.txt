@@ -1,0 +1,13 @@
+class A{
+	
+	dynamic B met1(){
+	}
+
+}
+
+
+class Nueva{
+
+	static void main(){}
+
+}

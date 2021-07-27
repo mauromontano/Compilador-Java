@@ -1,0 +1,12 @@
+class A{
+	static int main(){
+	}
+	
+	static int l(int x, char y, String s,A l ,B c){
+	}
+}
+
+
+class B{
+}
+

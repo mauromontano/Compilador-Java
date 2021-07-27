@@ -1,0 +1,13 @@
+class A{
+	public int elem;
+}
+
+class B extends A{
+	private char x;
+}
+
+class C extends B{
+	private String elem;
+
+	static void main(){}
+}

@@ -1,0 +1,8 @@
+class A{
+
+static int m(B x){
+}
+
+static void main(){}
+
+}

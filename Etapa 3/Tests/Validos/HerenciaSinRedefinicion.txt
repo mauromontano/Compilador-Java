@@ -1,0 +1,11 @@
+class B{
+	dynamic int v( int x){
+}
+}
+
+class A extends B{
+	static int main(){
+}
+
+
+}

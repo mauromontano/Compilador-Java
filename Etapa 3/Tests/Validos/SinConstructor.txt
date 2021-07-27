@@ -1,0 +1,8 @@
+class B {
+	
+	static void h2(){
+	}
+
+	static void main() {
+	}
+}

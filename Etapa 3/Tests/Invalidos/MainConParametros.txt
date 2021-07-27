@@ -1,0 +1,7 @@
+class A{
+
+	static void main (int x, int y){
+		int z = x + y;
+	}
+	
+}

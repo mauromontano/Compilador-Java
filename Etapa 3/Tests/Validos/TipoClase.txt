@@ -1,0 +1,16 @@
+class A{
+
+	static A main(){
+	}
+	
+	dynamic B a(){
+	}
+
+	static C s(){
+	}
+}
+
+class B{
+}
+class C{
+}

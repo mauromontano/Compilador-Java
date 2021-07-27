@@ -1,0 +1,12 @@
+class A{
+
+	private int l;
+
+	dynamic void l() {
+	
+	static void main(){}
+		
+	}
+
+	
+}

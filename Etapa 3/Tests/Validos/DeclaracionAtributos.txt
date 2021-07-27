@@ -1,0 +1,8 @@
+class A{
+	public int a;
+	private String f;
+	public A h; 
+	
+	static int main(){
+	}
+}
